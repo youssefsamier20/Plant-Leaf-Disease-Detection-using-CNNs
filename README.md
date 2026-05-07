@@ -1,19 +1,39 @@
-# 🌿 Plant Leaf Disease Detection using CNNs
+# Plant Disease Classification 🌱
 
+---
 ## Overview
-This project showcases an end-to-end machine learning pipeline for diagnosing 38 different plant leaf diseases. This model uses a customized Convolutional Neural Network (CNN), which has been trained using a data set of more than 87,000 pictures and yields a test accuracy rate of **91%**.
+This project implements a **Convolutional Neural Network (CNN)** to automatically classify plant leaf images into **38 disease categories**.  
+It is designed to assist farmers and agricultural specialists in early detection of plant diseases, improving crop management and yield.  
+The model achieves approximately **91% test accuracy** on unseen data.
 
 ---
+## Dataset
+The dataset is sourced from Kaggle: [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)  
+- **Number of Classes:** 38  
+- **Total Images:** 88,167 (Training + Validation + Test)  
 
+---
 ## Features
-
-- **Customized CNN Model:** Created from scratch by using TensorFlow and Keras.
-- **Strong Data Preparation:** Used OpenCV and NumPy to resize, normalize, and implement Contrast Limited Adaptive Histogram Equalization (CLAHE).
-- **Handling of Imbalanced Data:** Managed the issue of imbalance classes using dynamic class weights and data augmentation.
-- **Interactive Prediction Tool:** A live demo tool created using `ipywidgets` and `Matplotlib` for real-time image prediction.
+- Preprocessing pipeline with resizing, normalization, and CLAHE enhancement  
+- Data augmentation for better generalization  
+- Class weighting to handle class imbalance  
+- CNN architecture: 3 Conv2D layers with MaxPooling, followed by Dense layers with Dropout  
 
 ---
+## Usage
+1. Open the [Google Colab Notebook](https://colab.research.google.com/drive/19mwVk_xIheZnvVrh1t8xtaccOT-0vx4m?authuser=0#scrollTo=zfCR2I65nFm2) to run the project.  
+2. Upload a leaf image in the notebook.  
+3. The system predicts the disease class of the uploaded image.  
 
-## Stack
+---
+## Requirements
+- Python 3.x  
+- TensorFlow / Keras  
+- OpenCV, NumPy, Matplotlib, Scikit-learn  
 
-`Python` | `TensorFlow` | `Keras` | `OpenCV` | `NumPy` | `Scikit-learn` | `Matplotlib`
+---
+## License
+This project is for **educational purposes only**.
+
+---
+---

@@ -36,4 +36,7 @@ The dataset is sourced from Kaggle: [New Plant Diseases Dataset](https://www.kag
 This project is for **educational purposes only**.
 
 ---
+## Test video
+![Plant Disease Classification test video](test%20video.mp4)
+
 ---
